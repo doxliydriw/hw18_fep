@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>hw18_fep</title>
+  </head>
+  <body>
+    <script src="main.js"></script>
+    <!-- First subtask -->
+    <section class="section first container">
+      <p>
+        Є текстове поле на сторінці. При фокусі на цьому полі збоку з'являється
+        "div" з інформацією. При зникненні фокуса - так само пропадає
+      </p>
+      <div class="cntr">
+        <input
+          class="onfocus"
+          type="text"
+          placeholder="FOCUS ME"
+          onfocus="showDiv()"
+          onblur="hideDiv()"
+        />
+        <div id="focus">
+          div єлемент, шо з'явився при фокусі на поле для вводу текста FOCUS ON
+          ME
+        </div>
+      </div>
+    </section>
+    <!-- Second subtask -->
+    <section class="section second container">
+      <p>
+        На сторінці є дві кнопки. При натисканні на першу кнопку просимо
+        користувача ввести в prompt посилання, при натисканні на другу -
+        переадресовується на інший сайт (за раніше введеним посиланням).
+        Реалізувати перевірку на http/https. Якщо протокол не вказано - додаємо
+      </p>
+      <div class="cntr">
+        <button class="btn_one" onclick="get_link()">Insert link</button>
+        <button class="btn_two" onclick="redirect()">Re-direct</button>
+      </div>
+    </section>
+    <!-- Third subtask -->
+    <section class="section third container">
+      <p>
+        Вивести таблицю 10 × 10, заповнену числами від 1 до 100 (таблиця
+        створюється динамічно)
+      </p>
+      <div class="cntr" id="table">
+        <button class="btn_table" onclick="tableRun()">Table 10x10</button>
+      </div>
+    </section>
+    <!-- Fourth subtask -->
+    <section class="section fourth container">
+      <p>
+        У папці images є зображення 1.jpg, 2.jpg, 3.jpg, 4.jpg, 5.jpg, 6.jpg,
+        7.jpg, 8.jpg, 9.jpg. Вивести зображення з цієї папки отримане випадковим
+        чином (Math.random)
+      </p>
+      <div class="cntr" id="img_div">
+        <button class="btn_img" onclick="randomImg()">Random Image</button>
+      </div>
+    </section>
+  </body>
+</html>

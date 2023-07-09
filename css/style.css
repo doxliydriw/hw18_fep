@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+button {
+  margin: 10px;
+}
+
+.container {
+  max-width: 1230px;
+  min-width: 991px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  margin-top: 50px;
+}
+
+.cntr {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+}
+
+#focus {
+  margin-left: 20px;
+  border-width: 5px;
+  border-color: black;
+  background-color: gray;
+  font-weight: 700;
+  padding: 50px;
+  display: none;
+}
+
+#table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
